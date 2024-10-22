@@ -226,38 +226,50 @@
 								<p>We help businesses,organizations and individuals from around the world choose the best domain names for their brands.We,d love to help you too.</p>
 							</div>
 							<div class="inner-contact">
-							<form id="contactForm">
+							<form id="contactForm" class="wpcf7-form">
   <div class="two-fields">
     <!-- First Name Field -->
-    <input id="firstname" name="firstname" type="text" placeholder="First Name" required>
+    <input id="firstname" name="firstname" type="text" placeholder="First Name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required>
 
     <!-- Second Name Field -->
-    <input id="secondname" name="secondname" type="text" placeholder="Second Name" required>
+    <input id="secondname" name="secondname" type="text" placeholder="Second Name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required>
   </div>
 
   <div class="one-field">
     <!-- Email Field -->
-    <input id="email" name="email" type="email" placeholder="Email" required>
+    <input id="email" name="email" type="email" placeholder="Email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required" required>
   </div>
 
   <div class="one-field">
     <!-- Company Field (optional) -->
-    <input id="company" name="company" type="text" placeholder="Company">
+    <input id="company" name="company" type="text" placeholder="Company" class="wpcf7-form-control wpcf7-text">
   </div>
 
   <div class="one-field">
     <!-- Message Field -->
-    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+    <textarea id="message" name="message" placeholder="Your message" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" required></textarea>
   </div>
 
   <div class="submit-btn">
-    <button type="submit">Send</button>
+    <button type="submit" class="wpcf7-form-control wpcf7-submit">Send</button>
   </div>
 </form>
 
 <div id="formResponse"></div>
+
+<!-- Load SMTP.js -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<!-- Load jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Your custom form submission script -->
 <script src="submit_form.js"></script>
+
+<!-- Additional JS libraries or plugins (if any) -->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+
 
 
 
@@ -282,7 +294,7 @@
 				<!-- FOOTER -->
 			</div>
 			<script src="js/jquery.min"></script>
-			<script src="js/owl.carousel.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 			<script src="js/custom.js"></script>

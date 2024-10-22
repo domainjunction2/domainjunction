@@ -10,8 +10,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
   // Use SMTP.js to send email via SMTP2GO
   Email.send({
-    SecureToken: "api-3E70A6A1DEA94E9886CEB95A5143473F",  // Your SMTP2GO Secure Token
-    To: "your-email@example.com", // Replace with your email address
+    Host: "mail.smtp2go.com", // SMTP2GO host
+    Username: "domainjunction", // Your SMTP2GO username
+    Password: "yJ8LR4y96Je1Udbn", // Your SMTP2GO password
+    To: "mail@domainjunction.com", // Replace with your email address
     From: email, // Send from the user's email
     Subject: "New Contact Form Submission",
     Body: `First Name: ${firstname}<br>Second Name: ${secondname}<br>Email: ${email}<br>Company: ${company}<br>Message: ${message}`
@@ -21,8 +23,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       document.getElementById('contactForm').reset(); // Clear the form
     } else {
       document.getElementById('formResponse').innerHTML = 'There was an issue sending your message. Please try again.';
+      console.error(response); // Log the error response for debugging
     }
   }).catch(function (error) {
     document.getElementById('formResponse').innerHTML = 'An error occurred. Please try again.';
+    console.error(error); // Log the error for debugging
   });
 });

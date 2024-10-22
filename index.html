@@ -226,29 +226,19 @@
 								<p>We help businesses,organizations and individuals from around the world choose the best domain names for their brands.We,d love to help you too.</p>
 							</div>
 							<div class="inner-contact">
-							<form action="submit_form.php" method="POST" class="wpcf7-form">
-  <div class="two-fields">
-    <input id="firstname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="First Name" name="firstname" type="text" required>
-    <input id="second-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required secondname" placeholder="Second Name" name="secondname" type="text" required>
-    <input id="email" placeholder="Email" name="email" type="email" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required email" required>
-    <input id="company" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required company" placeholder="Company" name="company" type="text">
-  </div>
-  <div class="one-field">
-    <textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required message" placeholder="Message" required></textarea>
-  </div>
-  <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-  <div class="submit-btn">
-    <button class="wpcf7-form-control wpcf7-submit submit" id="btn1" type="submit">Send</button>
-  </div>
+							<form id="contactForm">
+  <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+  <input type="text" id="secondname" name="secondname" placeholder="Second Name" required>
+  <input type="email" id="email" name="email" placeholder="Email" required>
+  <input type="text" id="company" name="company" placeholder="Company">
+  <textarea id="message" name="message" placeholder="Your message" required></textarea>
+  <button type="submit">Send</button>
 </form>
 
-<script>
-  grecaptcha.ready(function() {
-    grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(function(token) {
-       document.getElementById('captchaResponse').value = token;
-    });
-  });
-</script>
+<div id="formResponse"></div> <!-- For success/error messages -->
+<script src="submit_form.js"></script>
+
+
 
 							</div>
 						</div>

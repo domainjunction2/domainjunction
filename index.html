@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
 <html lang="EN">
 <head>
@@ -226,54 +227,30 @@
 								<p>We help businesses,organizations and individuals from around the world choose the best domain names for their brands.We,d love to help you too.</p>
 							</div>
 							<div class="inner-contact">
-							<form id="contactForm" class="wpcf7-form">
-  <div class="two-fields">
-    <!-- First Name Field -->
-    <input id="firstname" name="firstname" type="text" placeholder="First Name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required>
+								<form action="https://getform.io/f/eb3aa201-928b-41f5-927f-2b576d52f19f" method="POST" class="wpcf7-form" >
+									<div class="two-fields">
+										<input  id="name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="First Name" name="name" type="text" required>
 
-    <!-- Second Name Field -->
-    <input id="secondname" name="secondname" type="text" placeholder="Second Name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required>
-  </div>
+										<input  id="second-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="Second Name" name="second-name" type="text" required>
 
-  <div class="one-field">
-    <!-- Email Field -->
-    <input id="email" name="email" type="email" placeholder="Email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required" required>
-  </div>
-
-  <div class="one-field">
-    <!-- Company Field (optional) -->
-    <input id="company" name="company" type="text" placeholder="Company" class="wpcf7-form-control wpcf7-text">
-  </div>
-
-  <div class="one-field">
-    <!-- Message Field -->
-    <textarea id="message" name="message" placeholder="Your message" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" required></textarea>
-  </div>
-
-  <div class="submit-btn">
-    <button type="submit" class="wpcf7-form-control wpcf7-submit">Send</button>
-  </div>
-</form>
-
-<div id="formResponse"></div>
-
-<!-- Load SMTP.js -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-<!-- Load jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Your custom form submission script -->
-<script src="submit_form.js"></script>
-
-<!-- Additional JS libraries or plugins (if any) -->
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+										<input id="email" placeholder="Email"  name="Email" type="text" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email" required>
 
 
+										<input  id="company" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="Company" name="company" type="text">
+									</div>
+									<div class="one-field">
+										
+										<textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required message" placeholder="Message"></textarea>
+										
+									</div>
+									<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+									<div class="submit-btn">
+										
+										<button class="wpcf7-form-control wpcf7-submit submit" id="btn1" type="submit">Send</button>
 
-
-
+									</div>
+									
+								</form>
 							</div>
 						</div>
 					</div>
@@ -293,32 +270,8 @@
 				</footer>
 				<!-- FOOTER -->
 			</div>
-			<script src="js/jquery.min"></script>
-			<script src="js/owl.carousel.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+			<script src="js/jquery.min.js"></script>
+			<script src="js/owl.carousel.js"></script>
 			<script src="js/custom.js"></script>
-		
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Email</title>
-</head>
-<body>
-    <!-- Your existing content -->
-
-    <!-- Button to send a test email -->
-    <button id="testEmailBtn">Send Test Email</button>
-    <div id="emailResponse"></div>
-
-    <!-- Include SMTP.js -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-</body>
-</html>
-</body>
+		</body>
 		</html>

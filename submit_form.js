@@ -11,9 +11,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Use SMTP.js to send email via SMTP2GO
   Email.send({
     Host: "mail.smtp2go.com", // SMTP2GO host
+    Port: 587, // Use port 587 for TLS (you can also use 2525, 8025, or 80)
     Username: "domainjunction", // Your SMTP2GO username
     Password: "yJ8LR4y96Je1Udbn", // Your SMTP2GO password
-    To: "mail@domainjunction.com", // Replace with your email address
+    To: "mail@domainjunction.com", // Replace with the recipient email address
     From: email, // Send from the user's email
     Subject: "New Contact Form Submission",
     Body: `First Name: ${firstname}<br>Second Name: ${secondname}<br>Email: ${email}<br>Company: ${company}<br>Message: ${message}`

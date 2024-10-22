@@ -318,28 +318,6 @@
     <!-- Include SMTP.js -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <!-- The test email script -->
-    <script>
-        document.getElementById('testEmailBtn').addEventListener('click', function() {
-            Email.send({
-                Host: "mail.smtp2go.com",
-                Port: 587, // You can also try 2525, 8025, 80, or 25
-                Username: "domainjunction", // SMTP2GO username
-                Password: "yJ8LR4y96Je1Udbn", // SMTP2GO password
-                To: "mail@domainjunction.com", // Replace with your email address
-                From: "ahfze123@gmail.com", // A valid "From" email
-                Subject: "Test Email",
-                Body: "This is a test email sent via SMTP.js"
-            }).then(function (message) {
-                document.getElementById('emailResponse').innerHTML = 'Email sent successfully: ' + message;
-                console.log("Email response:", message); // Log the email response
-            }).catch(function (error) {
-                document.getElementById('emailResponse').innerHTML = 'Error occurred: ' + error;
-                console.error("Error sending email:", error); // Log any errors
-            });
-        });
-    </script>
-
 </body>
 </html>
 </body>

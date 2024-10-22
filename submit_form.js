@@ -11,7 +11,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Use SMTP.js to send email via SMTP2GO
   Email.send({
     Host: "mail.smtp2go.com", // SMTP2GO host
-    Port: 587, // Use port 587 for TLS (you can also use 2525, 8025, or 80)
+    Port: 465, // Use port 587 for TLS (you can also use 2525, 8025, or 80)
     Username: "domainjunction", // Your SMTP2GO username
     Password: "yJ8LR4y96Je1Udbn", // Your SMTP2GO password
     To: "mail@domainjunction.com", // Replace with the recipient email address

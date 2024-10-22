@@ -226,30 +226,30 @@
 								<p>We help businesses,organizations and individuals from around the world choose the best domain names for their brands.We,d love to help you too.</p>
 							</div>
 							<div class="inner-contact">
-								<form action="https://getform.io/f/eb3aa201-928b-41f5-927f-2b576d52f19f" method="POST" class="wpcf7-form" >
-									<div class="two-fields">
-										<input  id="name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="First Name" name="name" type="text" required>
+							<form action="submit_form.php" method="POST" class="wpcf7-form">
+  <div class="two-fields">
+    <input id="firstname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="First Name" name="firstname" type="text" required>
+    <input id="second-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required secondname" placeholder="Second Name" name="secondname" type="text" required>
+    <input id="email" placeholder="Email" name="email" type="email" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required email" required>
+    <input id="company" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required company" placeholder="Company" name="company" type="text">
+  </div>
+  <div class="one-field">
+    <textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required message" placeholder="Message" required></textarea>
+  </div>
+  <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+  <div class="submit-btn">
+    <button class="wpcf7-form-control wpcf7-submit submit" id="btn1" type="submit">Send</button>
+  </div>
+</form>
 
-										<input  id="second-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="Second Name" name="second-name" type="text" required>
+<script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(function(token) {
+       document.getElementById('captchaResponse').value = token;
+    });
+  });
+</script>
 
-										<input id="email" placeholder="Email"  name="Email" type="text" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email" required>
-
-
-										<input  id="company" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="Company" name="company" type="text">
-									</div>
-									<div class="one-field">
-										
-										<textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required message" placeholder="Message"></textarea>
-										
-									</div>
-									<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-									<div class="submit-btn">
-										
-										<button class="wpcf7-form-control wpcf7-submit submit" id="btn1" type="submit">Send</button>
-
-									</div>
-									
-								</form>
 							</div>
 						</div>
 					</div>

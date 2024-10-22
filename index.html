@@ -226,28 +226,38 @@
 								<p>We help businesses,organizations and individuals from around the world choose the best domain names for their brands.We,d love to help you too.</p>
 							</div>
 							<div class="inner-contact">
-							<form id="contactForm" class="wpcf7-form">
+							<form id="contactForm">
   <div class="two-fields">
-    <input id="firstname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required firstname" placeholder="First Name" name="firstname" type="text" required>
-    <input id="secondname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required secondname" placeholder="Second Name" name="secondname" type="text" required>
+    <!-- First Name Field -->
+    <input id="firstname" name="firstname" type="text" placeholder="First Name" required>
+
+    <!-- Second Name Field -->
+    <input id="secondname" name="secondname" type="text" placeholder="Second Name" required>
   </div>
+
   <div class="one-field">
-    <input id="email" placeholder="Email" name="email" type="email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required email" required>
+    <!-- Email Field -->
+    <input id="email" name="email" type="email" placeholder="Email" required>
   </div>
+
   <div class="one-field">
-    <input id="company" class="wpcf7-form-control wpcf7-text company" placeholder="Company" name="company" type="text">
+    <!-- Company Field (optional) -->
+    <input id="company" name="company" type="text" placeholder="Company">
   </div>
+
   <div class="one-field">
-    <textarea id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required message" placeholder="Your message" required></textarea>
+    <!-- Message Field -->
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
   </div>
+
   <div class="submit-btn">
-    <button class="wpcf7-form-control wpcf7-submit submit" id="btn1" type="submit">Send</button>
+    <button type="submit">Send</button>
   </div>
 </form>
 
 <div id="formResponse"></div>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="submit_form"></script>
+<script src="submit_form.js"></script>
 
 
 
